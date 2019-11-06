@@ -8,6 +8,8 @@ Open source version of the STMicroelectronics Stlink Tools
 [![Linux Status](https://img.shields.io/travis/texane/stlink/master.svg?label=linux)](https://travis-ci.org/texane/stlink)
 [![Build Status](https://jenkins.ncrmnt.org/buildStatus/icon?job=GithubCI/stlink)](https://jenkins.ncrmnt.org/job/GithubCI/job/stlink/)
 
+**NOTICE: The project has currently not an active maintainer. Feel free to contribute and discus in issue [#826](https://github.com/texane/stlink/issues/826)** 
+
 ## HOWTO
 
 First, you have to know there are several boards supported by the software.
@@ -148,7 +150,7 @@ then it would be written to the memory.
 
 ## Writing Option Bytes
 
-Example to read and write option bytes (currently writing only supported for STM32G0)
+Example to read and write option bytes (currently writing only supported for STM32G0 and STM32L0)
 ```
 ./st-flash --debug --reset --format binary --flash=128k read option_bytes_dump.bin 0x1FFF7800 4
 ./st-flash --debug --reset --format binary --flash=128k write option_bytes_dump.bin 0x1FFF7800
